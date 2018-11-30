@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <column comment="" default="" key="false" label="date" length="-1"
+        nullable="true" originalDbColumnName="date" originalLength="0"
+        pattern="&quot;yyyy-MM-dd hh:mm:ss&quot;" precision="0" talendType="id_Date"/>
+    <column comment="" default="" key="false" label="employee_id"
+        length="-1" nullable="true" originalDbColumnName="employee_id"
+        originalLength="0" pattern="&quot;dd-MM-yyyy&quot;"
+        precision="0" talendType="id_Integer"/>
+    <column comment="" default="" key="false" label="product_upc"
+        length="12" nullable="true" originalDbColumnName="product_upc"
+        originalLength="0" pattern="&quot;dd-MM-yyyy&quot;"
+        precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="quantity"
+        length="-1" nullable="true" originalDbColumnName="quantity"
+        originalLength="0" pattern="&quot;dd-MM-yyyy&quot;"
+        precision="0" talendType="id_Integer"/>
+    <column comment="" default="" key="false" label="total_sale"
+        length="-1" nullable="true" originalDbColumnName="total_sale"
+        originalLength="0" pattern="&quot;dd-MM-yyyy&quot;"
+        precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="store_id"
+        length="-1" nullable="true" originalDbColumnName="store_id"
+        originalLength="0" pattern="" precision="-1"
+        talendType="id_String" type=""/>
+</schema>
