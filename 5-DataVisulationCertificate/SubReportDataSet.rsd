@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>SELECT  Sales.SalesTerritory.Name as Region,
+        Sales.SalesTerritory.CountryRegionCode, 
+        Sales.SalesTerritory.[Group] as Territory, 
+        Year(Sales.SalesOrderHeader.DueDate) as Year, 
+        Month(Sales.SalesOrderHeader.DueDate) as Month,
+        Sales.SalesOrderHeader.TotalDue
+FROM Sales.SalesTerritory 
+INNER JOIN Sales.SalesOrderHeader 
+ON Sales.SalesTerritory.TerritoryID = Sales.SalesOrderHeader.TerritoryID </CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Region">
+        <DataField>Region</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CountryRegionCode">
+        <DataField>CountryRegionCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Territory">
+        <DataField>Territory</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Year">
+        <DataField>Year</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Month">
+        <DataField>Month</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="TotalDue">
+        <DataField>TotalDue</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
